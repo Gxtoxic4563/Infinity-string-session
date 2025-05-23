@@ -16,14 +16,14 @@
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
 </h3>
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Badhacker98/StringBot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Pbx-Official/StringBot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 <details>
 <summary><h3>
 - <b> ᴠᴘs/ʟᴏᴄᴀʟ ᴅᴇᴘʟᴏʏᴍᴇɴᴛ ᴍᴇᴛʜᴏᴅ </b>
 </h3></summary>
 
-- Get your [Necessary Variables](https://github.com/Badhacker98/StringBot/blob/main/sample.env)
+- Get your [Necessary Variables](https://github.com/Pbx-Official/StringBot/blob/main/sample.env)
 - Upgrade and Update by :
 `sudo apt-get update && sudo apt-get upgrade -y`
 - Install required packages by :
@@ -31,7 +31,7 @@
 - Install pip by :
 `sudo pip3 install -U pip`
 - Clone the repository by :
-`git clone https://github.com/Badhacker98/StringBot && cd StringBot`
+`git clone https://github.com/Pbx-Official/StringBot && cd StringBot`
 - Install requirements by :
 `pip3 install -U -r requirements.txt`
 - Fill your variables in the env by :
