@@ -1,8 +1,8 @@
-# Copyright (C) 2024 by Badhacker98@Github, < https://github.com/Badhacker98 >.
+# Copyright (C) 2024 by Pbx-Official@Github, < https://github.com/Pbx-Official >.
 #
-# This file is part of < https://github.com/Badhacker98/StringBot > project,
+# This file is part of < https://github.com/Pbx-Official/StringBot > project,
 # and is released under the license agreement specified in:
-# < https://github.com/Badhacker98/StringBot/blob/main/LICENSE >
+# < https://github.com/Pbx-Official/StringBot/blob/main/LICENSE >
 #
 # All rights reserved.
 
@@ -23,10 +23,10 @@ async def start(client, message: Message):
         ],
         [
             InlineKeyboardButton("▪️sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ▪️", url=SUPPORT_CHAT),
-            InlineKeyboardButton("▪️ᴜᴘᴅᴀᴛᴇs ▪️", url="https://t.me/HEROKUBIN_01")
+            InlineKeyboardButton("▪️ᴜᴘᴅᴀᴛᴇs ▪️", url="https://t.me/PBX_UPDATE")
         ],
         [
-            InlineKeyboardButton("▪️ sᴏᴜʀᴄᴇ ▪️", url="https://github.com/Badhacker98/StringBot/fork"),
+            InlineKeyboardButton("▪️ sᴏᴜʀᴄᴇ ▪️", url="https://github.com/Pbx-Official/StringBot/fork"),
             InlineKeyboardButton("▪️ ᴍᴜsɪᴄ ʙᴏᴛ ▪️", url="https://t.me/Gaana_MusicBot")
         ]
     ]
@@ -72,3 +72,4 @@ async def generate_session(client, callback_query):
         text="❖ ᴘʟᴇᴀꜱᴇ ᴄʜᴏᴏꜱᴇ ᴀ ᴏᴘᴛɪᴏɴ \n❖ API_ID : `25742938`\n❖ API_HASH : `b35b715fe8dc0a58e8048988286fc5b6`",
         reply_markup=InlineKeyboardMarkup(buttons)
     )
+    
