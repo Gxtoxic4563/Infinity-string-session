@@ -9,15 +9,21 @@
 import config
 import time
 import logging
+import asyncio
 from pyrogram import Client, idle
 from pyromod import listen  
 from pyrogram.errors import ApiIdInvalid, ApiIdPublishedFlood, AccessTokenInvalid
 
+# Configure logging
 logging.basicConfig(
-    level=logging.WARNING, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    level=logging.WARNING,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
 
+# Track start time
 StartTime = time.time()
+
+# Initialize Pyrogram Client
 app = Client(
     "Anonymous",
     api_id=config.API_ID,
@@ -27,17 +33,21 @@ app = Client(
     plugins=dict(root="StringBot"),
 )
 
+async def main():
+    print("Starting StringBot...")
+    try:
+        await app.start()
+    except (ApiIdInvalid, ApiIdPublishedFlood):
+        raise Exception("❌ Your API_ID or API_HASH is invalid.")
+    except AccessTokenInvalid:
+        raise Exception("❌ Your BOT_TOKEN is invalid.")
+    
+    me = await app.get_me()
+    print(f"✅ Bot started as @{me.username}")
+    
+    await idle()
+    await app.stop()
+    print("🛑 Stopping StringBot...")
 
 if __name__ == "__main__":
-    print("StringBot...")
-    try:
-        app.start()
-    except (ApiIdInvalid, ApiIdPublishedFlood):
-        raise Exception("Your API_ID/API_HASH is not valid.")
-    except AccessTokenInvalid:
-        raise Exception("Your BOT_TOKEN is not valid.")
-    uname = app.get_me().username
-    print(f"@{uname} Started")
-    idle()
-    app.stop()
-    print("Stopping String Gen Bot. !")
+    asyncio.run(main())
