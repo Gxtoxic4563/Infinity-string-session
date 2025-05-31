@@ -10,7 +10,7 @@ import config
 import time
 import logging
 from pyrogram import Client, idle
-from pyromod import listen  # type: ignore
+from pyromod import listen  
 from pyrogram.errors import ApiIdInvalid, ApiIdPublishedFlood, AccessTokenInvalid
 
 logging.basicConfig(
